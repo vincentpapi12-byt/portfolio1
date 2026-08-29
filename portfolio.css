@@ -1,0 +1,299 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ebeef5;
+    color:#0f172a;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.Hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.Welcome{
+    max-width:700px;
+}
+
+.Welcome h2,
+.Welcome h3{
+    color:rgb(6,87,87);
+}
+
+.Welcome h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.Welcome h3{
+    font-weight:normal;
+    line-height:1.6;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 24px;
+    border:none;
+    border-radius:12px;
+    background:rgb(6,87,87);
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+
+.section-title{
+    margin:70px 0 40px;
+}
+
+.title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.title span{
+    width:100px;
+    height:2px;
+    background:#00c4cc;
+}
+
+.title h2{
+    color:rgb(6,87,87);
+    margin:0;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.About{
+    padding:0 20px;
+}
+
+.about-me{
+    max-width:800px;
+    margin:auto;
+}
+
+.about-me p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.skill{
+    width:250px;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+}
+
+.skill img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.skills-card{
+    padding:20px;
+    text-align:center;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.cards-project{
+    width:260px;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    border-top:4px solid rgb(6,87,87);
+
+    display:flex;
+    flex-direction:column;
+    transition: .3s;
+}
+
+.cards-project h3{
+    margin-top:0;
+}
+
+.cards-project .btn{
+    margin-top:auto;
+}
+
+.cards-project:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+
+.education{
+    width:600px;
+    max-width:90%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    border-left:5px solid rgb(6,87,87);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.education:hover{
+    transform:translateY(-5px);
+}
+
+.education-style{
+    line-height:1.8;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contacts{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.contacts-style{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    padding:15px 25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.contacts-style:hover{
+    transform:translateY(-5px);
+}
+
+.email,
+.git,
+.linkedin{
+    width:24px;
+    height:24px;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .Hero{
+        min-height:auto;
+        padding:80px 20px;
+    }
+
+    .Welcome h2{
+        font-size:2rem;
+    }
+
+    .Welcome h3{
+        font-size:1.1rem;
+    }
+
+    .title span{
+        width:60px;
+    }
+
+    .about-me{
+        width:95%;
+    }
+
+    .about-me p{
+        text-align:center;
+        font-size:16px;
+    }
+
+    .skill,
+    .cards-project{
+        width:90%;
+        max-width:320px;
+    }
+
+    .education{
+        width:95%;
+    }
+
+    .contacts{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contacts-style{
+        width:250px;
+        justify-content:center;
+    }
+
+}
