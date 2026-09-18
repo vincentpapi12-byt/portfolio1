@@ -337,3 +337,19 @@ body{
     background: rgb(6,87,87);
     color: white;
 }
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tech-tags span {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #e6f4f4;
+    color: rgb(6, 87, 87);
+    font-size: 12px;
+    font-weight: bold;
+}
