@@ -307,3 +307,33 @@ body{
     height: 150px;
     object-fit: cover;
 }
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    border: 2px solid rgb(6,87,87);
+    border-radius: 25px;
+    background: white;
+    color: rgb(6,87,87);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background: rgb(6,87,87);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.filters button.active-filter {
+    background: rgb(6,87,87);
+    color: white;
+}
