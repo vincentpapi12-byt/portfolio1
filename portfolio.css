@@ -364,3 +364,14 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
+
+.project-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-reveal.project-active {
+    opacity: 1;
+    transform: translateY(0);
+}
