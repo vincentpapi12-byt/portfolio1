@@ -82,29 +82,20 @@ ContactEl.addEventListener("click", function() {
 })
 
 const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(function(entry) {
+    entries.forEach(function(entry) {
 
-         if (entry.isIntersecting) {
-
-    if (entry.target.classList.contains("project-reveal")) {
-        entry.target.classList.add("project-active");
-    }
-    else {
-        entry.target.classList.add("reveal-active");
-    }
-
-}
+        if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-active");
+        }
 
     });
 });
 
 const revealSections = document.querySelectorAll(".reveal-section");
-const projectCards = document.querySelectorAll(".project-reveal");
 
 revealSections.forEach(function(section) {
     revealObserver.observe(section);
 });
 
-projectCards.forEach(function(card) {
-    revealObserver.observe(card);
-});
+
+
