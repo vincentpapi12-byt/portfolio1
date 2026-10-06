@@ -80,3 +80,21 @@ ViewEl.addEventListener("click", function() {
 ContactEl.addEventListener("click", function() {
     Contacts.scrollIntoView({ behavior: "smooth" })
 })
+
+const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(function(entry) {
+
+           if (entry.isIntersecting) {
+
+              entry.target.classList.add("reveal-active");
+
+}
+
+    });
+});
+
+const revealSections = document.querySelectorAll(".reveal-section");
+
+revealSections.forEach(function(section) {
+    revealObserver.observe(section);
+});
